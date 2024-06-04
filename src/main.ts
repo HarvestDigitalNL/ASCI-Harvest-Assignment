@@ -20,12 +20,10 @@ function main() {
 
   // TODO (1): fetch template information from our database
   const template: MessageTemplate = fetchTemplateFromDatabase();
-
   console.info('>> Template fetched: ', template);
 
   // TODO (2): construct the messages we'd like to send (based on the message template)
   const messages: MessageBatch= fetchMessageBatch()
-
   console.info('>> Messages fetched: ', messages);
 
   // TODO (3): construct request and send message

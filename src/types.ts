@@ -10,7 +10,7 @@ export interface SendMessageConfiguration {
 
 type MessageVariableName = string;
 type MessageVariableValue = string;
-type MessageVariables = Record<MessageVariableValue, MessageVariableName>;
+type MessageVariables = Record<MessageVariableName, MessageVariableValue>;
 
 /** Message template types **/
 

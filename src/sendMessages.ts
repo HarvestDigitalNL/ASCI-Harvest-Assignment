@@ -11,6 +11,9 @@ import {
 //       Wait for confirmation of the software team and execute 'git pull' in the root of this repository.
 const ENDPOINT = 'https://webhook.site/c9ac74c5-053e-480e-a364-49b3f5f19bc4';
 
+// TODO: Replace 'YOUR-TEAM-01' with your team name
+const TEAM_NAME = 'YOUR-TEAM-01';
+
 /**
  * Make a POST request to our messaging endpoint.
  */
@@ -24,10 +27,8 @@ async function sendMessage(config: SendMessageConfiguration) {
  * For example: "My name is {{firstName}}" -> "My name is Thijmen"
  */
 function insertVariablesIntoMessage(content: TemplateContent, message: Message): string {
-  console.debug('content', content);
-  console.debug('message', message);
-
-
+  console.debug('templateContent: ', content);
+  console.debug('messageContent: ', message);
   return 'SOME MESSAGE'
 }
 
@@ -36,25 +37,22 @@ function insertVariablesIntoMessage(content: TemplateContent, message: Message):
  */
 export async function sendMessages(template: MessageTemplate, messageBatch: MessageBatch) {
 
-
   // TODO: Send a message for each message in the message batch
   for (const message of messageBatch.messages) {
-
-    //TODO: Find the template content for the provided language code
-    // const contentForLanguage = template.content.filter((content) => ...);
-
+    //TODO: Find the template content for the provided language code in message
+    // const templateContentForLanguage = ...
 
     //TODO: Replace the variables in the message content with the actual values
-    // const messageContent = insertVariablesIntoMessage(contentForLanguage, message);
+    // const messageContent = insertVariablesIntoMessage(templateContentForLanguage, message);
 
     const sendMessageConfig: SendMessageConfiguration = {
-      teamName: 'Test',
-      // TODO: add messageContent to the configuration
+      teamName: TEAM_NAME,
+      // TODO: add messageContent to this object
       messageContent: '',
       phoneNumber: message.phoneNumber
     }
 
-
-    sendMessage(sendMessageConfig).catch((error) => console.error(error));
+    // TODO: send the message using the sendMessage function
+    // sendMessage(sendMessageConfig).catch((error) => console.error(error));
   }
 }

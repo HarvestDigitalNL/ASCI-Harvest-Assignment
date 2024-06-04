@@ -1,7 +1,6 @@
 import { MessageBatch } from './types';
 
 // NB: dummy data
-// TODO add the phone number of one (or two) of your team members to the DUTCH message objects
 const messages: MessageBatch = {
   templateID: 12,
   messages: [
