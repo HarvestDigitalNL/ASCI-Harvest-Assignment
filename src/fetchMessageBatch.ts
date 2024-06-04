@@ -1,4 +1,4 @@
-import { MessageBatch } from './types';
+import { MessageBatch } from './types.js';
 
 // NB: dummy data
 const messages: MessageBatch = {
