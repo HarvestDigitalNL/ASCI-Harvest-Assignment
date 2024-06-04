@@ -1,4 +1,4 @@
-import { MessageTemplate } from './types';
+import { MessageTemplate } from './types.js';
 
 // NB: this template data would normally be stored in the database
 const template: MessageTemplate = {

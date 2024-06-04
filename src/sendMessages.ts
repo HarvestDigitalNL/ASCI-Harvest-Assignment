@@ -5,7 +5,7 @@ import {
   SendMessageConfiguration,
   TemplateContent,
   Message,
-} from './types';
+} from './types.js';
 
 // TODO: This endpoint will be updated when the challenge has started.
 //       Wait for confirmation of the software team and execute 'git pull' in the root of this repository.
