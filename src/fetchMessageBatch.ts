@@ -1,4 +1,4 @@
-import { MessageBatch } from './types';
+import { MessageBatch } from './types.js';
 
 // NB: dummy data
 // TODO add the phone number of one (or two) of your team members to the DUTCH message objects

@@ -1,7 +1,7 @@
-// import { fetchMessageBatch } from './fetchMessageBatch';
-// import { fetchTemplateFromDatabase } from './database';
-// import { sendMessages } from './sendMessages';
-// import { MessageTemplate, MessageBatch } from './types';
+// import { fetchMessageBatch } from './fetchMessageBatch.js';
+// import { fetchTemplateFromDatabase } from './database.js';
+// import { sendMessages } from './sendMessages.js';
+// import { MessageTemplate, MessageBatch } from './types.js';
 
 export const TEAMNAME = 'YOUR-TEAM';
 
@@ -15,7 +15,7 @@ export const TEAMNAME = 'YOUR-TEAM';
  *
  * Make sure you read README.md before proceeding.
  */
-function main() {
+async function main() {
   const templateIdx: number = 69;
 
   console.log('>> App started \n');
@@ -34,4 +34,4 @@ function main() {
   console.info('>> App finished \n');
 }
 
-main();
+await main();
