@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf build",
     "build": "npm run clean && tsc --build .",
-    "start": "npm run build && node build/src/main.js"
+    "start": "npm run build && node build/main.js"
   },
   "repository": {
     "type": "git",
