@@ -8,8 +8,7 @@ import {
 } from './types.js';
 
 // TODO: This endpoint will be updated when the challenge has started.
-//       Wait for confirmation of the software team and execute 'git pull' in the root of this repository.
-const ENDPOINT = 'https://webhook.site/c9ac74c5-053e-480e-a364-49b3f5f19bc4';
+const ENDPOINT = 'https://webhook.site/701ce76e-beb6-4cb5-b9ca-13564531765c';
 
 // TODO: Replace 'YOUR-TEAM-01' with your team name
 const TEAM_NAME = 'YOUR-TEAM-01';
