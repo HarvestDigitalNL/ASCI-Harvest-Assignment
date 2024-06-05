@@ -1,34 +1,33 @@
 import { MessageBatch } from './types.js';
 
 // NB: dummy data
-// TODO add the phone number of one (or two) of your team members to the DUTCH message objects
 const messages: MessageBatch = {
-  templateID: 69,
+  templateID: 12,
   messages: [
     {
       languageCode: 'EN',
       phoneNumber: '00316...',
-      variables: [['deliveryDays', '1']],
+      variables: { firstName: 'Walter', flightTime: '14:00' },
     },
     {
       languageCode: 'NL',
       phoneNumber: '00316...',
-      variables: [['deliveryDays', '6']],
+      variables: { firstName: 'Wouter', flightTime: '13:00' },
     },
     {
       languageCode: 'DE',
       phoneNumber: '00316...',
-      variables: [['deliveryDays', '2']],
+      variables: { firstName: 'Waltz', flightTime: '22:00' },
     },
     {
       languageCode: 'FR',
       phoneNumber: '00316...',
-      variables: [['deliveryDays', '3']],
+      variables: { firstName: 'il Wutrè', flightTime: '4:00' },
     },
     {
       languageCode: 'NL',
       phoneNumber: '00316...',
-      variables: [['deliveryDays', '9']],
+      variables: { firstName: 'Wouter', flightTime: '7:00' },
     },
   ],
 };
